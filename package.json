@@ -1,6 +1,6 @@
 {
   "name": "prox-effect",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "devDependencies": {
     "@types/react": "^18.2.12",
     "npm-ez": "^2.0.6",
