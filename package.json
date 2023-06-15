@@ -1,6 +1,6 @@
 {
   "name": "prox-effect",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "devDependencies": {
     "@types/react": "^18.2.12",
     "npm-ez": "^2.0.6",
@@ -15,13 +15,18 @@
   "exports": {
     ".": {
       "require": "./dist-cjs/index.cjs",
-      "import": "./dist-mjs/index.mjs",
-      "types": "./dist-mjs/index.mts"
+      "import": "./dist-mjs/index.mjs"
     },
     "./react": {
       "require": "./dist-cjs/useProxEffect.cjs",
-      "import": "./dist-mjs/useProxEffect.mjs",
-      "types": "./dist-mjs/useProxEffect.mts"
+      "import": "./dist-mjs/useProxEffect.mjs"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "react": [
+        "./dist-mjs/useProxEffect.mts"
+      ]
     }
   }
 }
