@@ -1,11 +1,7 @@
 import proxEffect from './index'
 import { useEffect, useState, MutableRefObject, RefObject } from 'react'
 
-export type HTMLElementRef =
-  | MutableRefObject<HTMLElement | undefined | null>
-  | RefObject<HTMLElement | undefined | null>
-
-export default function useProxEffect(
+function useProxEffect(
   anchorRef: HTMLElementRef,
   containerRef?: HTMLElementRef
 ) {
@@ -27,3 +23,8 @@ export default function useProxEffect(
 
   return degree
 }
+
+export default useProxEffect
+export type HTMLElementRef =
+  | MutableRefObject<HTMLElement | undefined | null>
+  | RefObject<HTMLElement | undefined | null>
