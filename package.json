@@ -1,6 +1,6 @@
 {
   "name": "prox-effect",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "devDependencies": {
     "@types/react": "^18.2.12",
     "npm-ez": "^2.0.6",
@@ -25,7 +25,7 @@
   },
   "typesVersions": {
     "*": {
-      "./react": [
+      "react": [
         "./dist-mjs/useProxEffect.d.mts"
       ]
     }
